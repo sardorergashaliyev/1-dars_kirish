@@ -12,18 +12,31 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         home: Container(
             color: Colors.black,
-            child: Center(
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Container(
-                    height: 100,
-                    width: 300,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Container(
+                    height: 500,
+                    width: 100,
                     decoration: const BoxDecoration(
-                        color: Colors.white,
+                        color: Colors.blue,
                         borderRadius: BorderRadius.only(
-                            topLeft: Radius.circular(15),
-                            topRight: Radius.circular(15))),
+                            topLeft: Radius.circular(20),
+                            bottomLeft: Radius.circular(20))),
+                    child: const Center(
+                      child: Text(
+                        'F',
+                        style: TextStyle(
+                            decoration: TextDecoration.none,
+                            color: Colors.black),
+                        textAlign: TextAlign.center,
+                      ),
+                    ),
+                  ),
+                  Container(
+                    height: 500,
+                    width: 100,
+                    color: Colors.white,
                     child: const Center(
                       child: Text(
                         'R',
@@ -35,12 +48,16 @@ class MyApp extends StatelessWidget {
                     ),
                   ),
                   Container(
-                    width: 300,
-                    height: 100,
-                    color: Colors.blue,
+                    height: 500,
+                    width: 100,
+                    decoration: const BoxDecoration(
+                        color: Colors.red,
+                        borderRadius: BorderRadius.only(
+                            topRight: Radius.circular(20),
+                            bottomRight: Radius.circular(20))),
                     child: const Center(
                       child: Text(
-                        'U',
+                        'A',
                         style: TextStyle(
                             decoration: TextDecoration.none,
                             color: Colors.black),
@@ -48,27 +65,7 @@ class MyApp extends StatelessWidget {
                       ),
                     ),
                   ),
-                  Container(
-                    height: 100,
-                    width: 300,
-                    decoration: const BoxDecoration(
-                        color: Colors.red,
-                        borderRadius: BorderRadius.only(
-                            bottomLeft: Radius.circular(20),
-                            bottomRight: Radius.circular(15))),
-                    child: const Center(
-                      child: Text(
-                        'S',
-                        style: TextStyle(
-                          decoration: TextDecoration.none,
-                          color: Colors.black,
-                        ),
-                        textAlign: TextAlign.center,
-                      ),
-                    ),
-                  )
-                ],
-              ),
+              ],
             )));
   }
 }
