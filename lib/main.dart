@@ -16,10 +16,14 @@ class MyApp extends StatelessWidget {
               child: Column(
                 children: [
                   Container(
-                    child: Text('U', textAlign: TextAlign.center),
                     height: 100,
                     width: 500,
                     color: Colors.blue,
+                    child: const Text(
+                      'U',
+                      style: TextStyle(decoration: TextDecoration.none),
+                      textAlign: TextAlign.center,
+                    ),
                   ),
                   Container(
                     height: 10,
@@ -27,10 +31,14 @@ class MyApp extends StatelessWidget {
                     color: Colors.red,
                   ),
                   Container(
-                    child: Text('Z', textAlign: TextAlign.center,),
                     width: 500,
                     height: 100,
                     color: Colors.white,
+                    child: const Text(
+                      'Z',
+                      style: TextStyle(decoration: TextDecoration.none),
+                      textAlign: TextAlign.center,
+                    ),
                   ),
                   Container(
                     height: 10,
@@ -38,10 +46,14 @@ class MyApp extends StatelessWidget {
                     color: Colors.red,
                   ),
                   Container(
-                    child: Text('B', style: TextStyle(decoration: TextDecoration.none), textAlign: TextAlign.center,),
                     height: 100,
                     width: 500,
                     color: Colors.green,
+                    child: const Text(
+                      'B',
+                      style: TextStyle(decoration: TextDecoration.none),
+                      textAlign: TextAlign.center,
+                    ),
                   )
                 ],
               ),
