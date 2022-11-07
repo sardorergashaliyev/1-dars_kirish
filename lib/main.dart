@@ -12,7 +12,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         home: Container(
       color: Colors.blue,
-      child: Center(child: Text("Sardor")),
+      child: const Center(
+          child: Text(
+        "Sardor",
+        style: TextStyle(color: Colors.yellow),
+      )),
     ));
   }
 }
