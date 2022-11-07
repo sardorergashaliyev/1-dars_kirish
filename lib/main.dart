@@ -20,8 +20,10 @@ class MyApp extends StatelessWidget {
                     height: 100,
                     width: 300,
                     decoration: const BoxDecoration(
-                        color: Colors.blue,
-                        borderRadius: BorderRadius.all(Radius.circular(20))),
+                        color: Colors.white,
+                        borderRadius: BorderRadius.only(
+                            topLeft: Radius.circular(15),
+                            topRight: Radius.circular(15))),
                     child: const Center(
                       child: Text(
                         'R',
@@ -33,18 +35,9 @@ class MyApp extends StatelessWidget {
                     ),
                   ),
                   Container(
-                    height: 10,
-                    width: 265,
-                    decoration: const BoxDecoration(
-                        color: Colors.red,
-                        borderRadius: BorderRadius.all(Radius.circular(20))),
-                  ),
-                  Container(
                     width: 300,
                     height: 100,
-                    decoration: const BoxDecoration(
-                        color: Colors.white,
-                        borderRadius: BorderRadius.all(Radius.circular(20))),
+                    color: Colors.blue,
                     child: const Center(
                       child: Text(
                         'U',
@@ -56,18 +49,13 @@ class MyApp extends StatelessWidget {
                     ),
                   ),
                   Container(
-                    height: 10,
-                    width: 265,
-                    decoration: const BoxDecoration(
-                        color: Colors.red,
-                        borderRadius: BorderRadius.all(Radius.circular(20))),
-                  ),
-                  Container(
                     height: 100,
                     width: 300,
                     decoration: const BoxDecoration(
-                        color: Colors.green,
-                        borderRadius: BorderRadius.all(Radius.circular(20))),
+                        color: Colors.red,
+                        borderRadius: BorderRadius.only(
+                            bottomLeft: Radius.circular(20),
+                            bottomRight: Radius.circular(15))),
                     child: const Center(
                       child: Text(
                         'S',
