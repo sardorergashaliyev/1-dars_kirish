@@ -14,15 +14,20 @@ class MyApp extends StatelessWidget {
             color: Colors.black,
             child: Center(
               child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Container(
                     height: 100,
                     width: 500,
                     color: Colors.blue,
-                    child: const Text(
-                      'U',
-                      style: TextStyle(decoration: TextDecoration.none),
-                      textAlign: TextAlign.center,
+                    child: const Center(
+                      child: Text(
+                        'U',
+                        style: TextStyle(
+                            decoration: TextDecoration.none,
+                            color: Colors.black),
+                        textAlign: TextAlign.center,
+                      ),
                     ),
                   ),
                   Container(
@@ -34,10 +39,14 @@ class MyApp extends StatelessWidget {
                     width: 500,
                     height: 100,
                     color: Colors.white,
-                    child: const Text(
-                      'Z',
-                      style: TextStyle(decoration: TextDecoration.none),
-                      textAlign: TextAlign.center,
+                    child: const Center(
+                      child: Text(
+                        'Z',
+                        style: TextStyle(
+                            decoration: TextDecoration.none,
+                            color: Colors.black),
+                        textAlign: TextAlign.center,
+                      ),
                     ),
                   ),
                   Container(
@@ -49,10 +58,15 @@ class MyApp extends StatelessWidget {
                     height: 100,
                     width: 500,
                     color: Colors.green,
-                    child: const Text(
-                      'B',
-                      style: TextStyle(decoration: TextDecoration.none),
-                      textAlign: TextAlign.center,
+                    child: const Center(
+                      child: Text(
+                        'B',
+                        style: TextStyle(
+                          decoration: TextDecoration.none,
+                          color: Colors.black,
+                        ),
+                        textAlign: TextAlign.center,
+                      ),
                     ),
                   )
                 ],
